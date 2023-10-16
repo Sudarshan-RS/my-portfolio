@@ -31,9 +31,18 @@
         font-size: 25px;
         text-shadow: 4px 4px 2px black;
     }
-    nav a
+    .bi-justify
+    {
+        display: none;
+    }
+    .nav{
+        list-style: none;
+        display: flex;
+    }
+    ul a
     {
         text-decoration: none;
+        
         color:white;
         /* text-shadow: 2px 2px 2px black; */
     }
@@ -180,7 +189,7 @@
         color: black; 
         width: 100%;
     }
-    .heading
+    .heading, .heading-pc
     {
         font-size: 40px;
         color: black;
@@ -188,6 +197,10 @@
         text-shadow: 5px 2px 5px grey;
         padding-top: 50px;
        
+    }
+    .heading-mobile
+    {
+        display: none;
     }
     .skillimg
     {
@@ -295,6 +308,16 @@
         height: 500px;
         padding-top:80px;
         
+    }
+    .service-h3
+    {
+        margin-left: 150px;
+        font-size: 25px; 
+        color: red;
+    }
+    .service-p
+    {
+        margin-left: 150px;
     }
     .service img
     {
@@ -413,5 +436,373 @@
     }
 }
 @media screen and (orientation:portrait) {
+    body
+    {
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: black;*/
+        color: red; 
+        overflow-x: hidden;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header
+    {
+        display: flex;
+        position: sticky;
+        top:5px;
+        justify-content: space-around;
+        background-color:rgb(38, 36, 36);
+        /* color: white; */
+        padding: 5px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin: 2px 0px 2px 0px;
+        transition: 800ms;
+        align-items: center;
+        height: 20px;
+        /* width:80%; */
+    }
+    .logo
+    {
+        font-weight: bold;
+        font-size: 15px;
+        text-shadow: 4px 4px 2px black;
+    }
+    .nav
+    {
+        list-style: none;
+    }
+    .bi-justify
+    {
+        background-color: rgb(38, 36, 36);
+        color: aliceblue;
+        border: none;
+        position: relative;
+        top: -8px;
+        right: -25px;
+    }
+    .nav-items
+    {
+        display: none;       
+    }
+    .home
+    {
+        display: grid;
+        margin-bottom: -100px;
+
+    }
+    .home-img img
+    {
+        display: none;
+    }
+    .main-text
+    {
+        margin-top: 50px;
+        width: 100%;
+        text-shadow: 4px 4px 5px grey;
+    }
+    .first-line
+    {
+        font-size: 18px;
+        margin-bottom: -12px;
+    }
+    .second-line
+    {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: -12px;
+
+    }
+    .typing
+    {
+        display:inline-block;
+        padding-right: 3px;
+        font-size: 18px;
+        border-right: 3px solid black;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 6s steps(23) infinite;
+        
+    }
+    @keyframes typing {
+        0%
+        {
+           width: 0;
+        }
+        50%
+        {
+            width: 70%;
+        }
+        
+    }
+    .btn-hire
+    {
+        color: white;
+        background-color: black;
+        width: 80px;
+        height: 30px;
+        margin-right: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: inset 0 0 0 50px black;
+        font-size: 15px;
+        transition: ease-out 1s;
+    }
+    .btn-cv
+    {
+        color: white;
+        background-color: black;
+        width: 115px;
+        height: 30px;
+        margin-right: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: inset 0 0 0 50px black;
+        font-size: 15px;
+        transition: ease-out 1s;
+    }
+    .btn-cv:hover
+    {
+        color: black;
+        background-color: white;
+        box-shadow: inset 0 0 0 0 black;
+        transition: .7s;    
+    }
+    .btn-hire:hover
+    {
+        color: black;
+        background-color: white;
+        box-shadow: inset 0 0 0 0 black;
+        transition: .7s;    
+        
+    }
+    .skills
+    {
+        margin-top:30px;
+        color: black; 
+    }
+    .heading-mobile
+    {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        text-shadow: 5px 2px 5px grey;
+        margin-bottom: -120px;
+    }
+    .heading
+    {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        text-shadow: 5px 2px 5px grey;
+    }
+    .heading-pc
+    {
+        display: none;
+    }
+    .skillimg
+    {
+       display: none;
+        
+    }
+    table
+    {
+        margin-top: 150px;
+    }
+    td
+    {
+        justify-content: space-between;
+        width: 150%;
+        font-weight: bold;
+    }
+    .skbar
+    {
+        width: 100%;
+        height: 25px;
+        transition: .5s;
+    }
+    .skbar:hover
+    {
+        width: 102%;
+        height: 26px;
+        transition: .2s;
+    }
+    #Projects
+    {
+        margin-top: 12%;
+        color: black;
+    }
+    .Projects
+    {
+        background-color: black;
+        color: aliceblue;
+        padding: 18px;
+        border-radius: 10px;
+        padding-left: 20%;
+    }
+    .Projects a
+    {
+        display: flex;
+        text-decoration: none;
+        width: 125px;
+        color: black;
+        background-color: white;
+        padding: 3px 0px 3px 20px ;
+        border-radius: 7px;
+        font-weight: bold;
+        border: 1px solid red;
+        transition: .3s;
+    }
+    .Projects a:hover
+    {
+        font-size: 15px;
+        transition: .5s;
+        background-color: lightblue;
+    }
+    .p-heading
+    {
+        font-weight: bold;
+        margin-bottom: -9%;
+        font-size: 18px;
+
+    }
+    #Projects img
+    {
+        margin-top: 5%;
+        margin-bottom: 3%;
+        height: 100px;
+        width: 140px;
+        border-radius: 10px;
+        border: 5px solid lightblue;
+        transition:ease-out .5s;
+    }
+    #Projects img:hover
+    {
+        height: 105px;
+        width: 145px;
+        transition:ease-out .5s;
+    }
+    .service
+    {
+        padding-top:20px;   
+    }
+    .service-h3
+    {
+        font-size: 25px; 
+        color: red;
+    }
+    .service img
+    {
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top: 10px double black;
+        border-bottom: 10px double black;
+        width: 100%;
+        height: 45%;
+        transition: .3s;
+    }
+    .service img:hover
+    {
+        width: 102%;
+        height: 46%;
+        transition: .3s;
+    }
+    .services-list
+    {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    .service p 
+    {
+        color: black;
+    }
+    #contact
+    {
+        background-color: black;
+        border-radius: 20px;
+        padding: 5%;
+    }
+    .contact-left
+    {
+        color: white;
+    }
+    .contact-left h1
+    {
+        font-size: 25px;
+
+    }
+    .contact-left div
+    {
+        margin-bottom:15px ;
+    }
+    .contact-left span
+    {
+        margin-right: 15px;
+    }
+    .contact-left button
+    {
+        padding: 15px 40px 15px 40px;
+        margin-bottom: 15%;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        box-shadow: inset 0 0 0 50px rgb(255, 0, 0);
+        transition: ease-out .5s;
+    }
+    .contact-left button:hover
+    {
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 15px 40px 15px 40px;
+        box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
+        transition: .5s;  
+    }
+    .contact-form input
+    {
+        width: 100%;
+        height: 35px;
+        background-color: rgb(68, 67, 67);
+        border: 1px solid black;
+        border-radius: 5px;
+        color: aliceblue;
+    }
+    .contact-form textarea
+    {
+        max-width: 100%;
+        max-height: 50%;
+        min-width: 100%;
+        min-height: 50%;
+        background-color: rgb(68, 67, 67);
+        border-radius: 5px;
+        border: 1px solid black;
+        color: aliceblue;
+    }
+    .contact-form button
+    {
+        padding: 15px 40px 15px 40px;
+        border-radius: 10px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        box-shadow: inset 0 0 0 50px rgb(255, 0, 0);
+        transition: ease-out .5s;
+    }
+    .contact-form button:hover
+    {
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 15px 40px 15px 40px;
+        box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
+        transition: .5s;   
+    }
+    ::placeholder
+    {
+        color: white;
+        font-size: 15px;
+    }
         
 }
