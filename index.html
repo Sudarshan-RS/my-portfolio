@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="Stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google font Library -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap library -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Portfolio.
+        </div>
+        <div>
+            <nav class="nav">
+                <a class="nav-items" href="#home">Home</a>
+                <a class="nav-items" href="#skills">Skills</a>
+                <a class="nav-items" href="#Projects">Projects</a>
+                <a class="nav-items" href="#service">Services</a>
+                <a class="nav-items" href="#contact">Contact</a>
+            </nav>        
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="home"  id="home">
+                <div class="home-img">
+                    <img src="./public/images/my1.jpeg" alt="My ortrait" height="600px" width="450px" id="main-img" target>
+                </div>
+                <div>
+                    <div class="main-text">
+                        <p class="first-line">I'm</p>
+                        <p class="second-line">Sudarshan Somvanshi</p>
+                        <p class="typing">MERN Stack Developer... </p>
+                    </div>
+                    <div class="main-btn">
+                        <a href="./public/docs/Sudarshan_Somvanshi.pdf" target="_blank"><button class="btn-cv">Download CV</button></a>
+                        <a href="#contact"><button class="btn-hire">Hire Me</button></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: grey; margin-top: 220px; margin-right: 105px;">
+            <div class="skills" id="skills">
+                <table>
+                    <tr>
+                        <td>HTML / CSS</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="90" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="90" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript / jQuery</td>
+                        <td>75%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="75" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>ReactJS</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="85" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>NodeJS / ExpressJS</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="85" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="70" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td>SQL/MongoDB</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td><progress class="skbar" value="80" min="1" max="100"></td>
+                    </tr>
+
+                </table>
+                <div>
+                    <p  class="heading">Skills</p>
+                    <!-- <img src="./public/images/mern.jpg" alt="MERN"> -->
+                    <img class="skillimg" src="./public/images/programming.png" alt="web">
+                </div>
+                
+            </div>
+            <div id="Projects">
+                <p class="heading">My Projects</p>
+                <div class="Projects">
+                    <span>
+                        <p class="p-heading">Shoper template</p> <br>
+                        <img src="./public/images/Shoper_thumbnail.png" alt="shoper-templet"><br>
+                        <a href="./public/shoper-templet.html" target="_blank">Live Preview</a>
+                    </span>
+                    <span>
+                        <p class="p-heading">Landkit Landing page</p> <br>
+                        <img src="./public/images/Landkit_thumbnail.png" alt="Landkit_thumbnail"><br>
+                        <a href="./public/Landkit.html" target="_blank">Live Preview</a>
+                    </span>
+                    <span>
+                        <p class="p-heading">NareshIT_YTchannel</p> <br>
+                        <img src="./public/images/NareshIT_thimbnail.png" alt="NareshIT_thimbnail"><br>
+                        <a href="./public/nareshit.html" target="_blank">Live Preview</a>
+                    </span>
+                    <span>
+                        <p class="p-heading">Weather</p> <br>
+                        <img src="./public/images/Weather_thumbnail.png" alt="Weather_thumbnail"><br>
+                        <a href="./public/ClassroomWeatherTable.html" target="_blank">Live Preview</a>
+                    </span>
+                </div>
+
+            </div>
+            <div>
+                <h2 class="heading" id="service">Services</h2>
+                <div class="service">
+                    <img src="./public/images/web-development.png" alt="Web development" height="75px" width="150px">
+
+                    <span>
+                        <ul class="services-list">
+                            <li>Front-end Development</li>
+                            <li>Backend Development</li>
+                            <li>Responsive Design</li>
+                            <li>Website Redesign</li>
+                            <li>Website Maintenance</li>
+                        </ul>
+                        <h3 style="margin-left: 150px; font-size: 25px; color: red;">Technologies and Tools:</h3>
+                        <p style="margin-left: 150px;">
+                            We leverage cutting-edge technologies and frameworks, including <span style="font-weight: bold;">HTML, CSS, JavaScript, React, Node.js, Java and databases like MySQL and MongoDB</span>.</p>
+                    </span>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <span class="bi bi-telegram" style="color: rgb(0, 136, 255);"></span><span>sudarshansomvanshi18@gmail.com</span><br><br>
+                    <span class="bi bi-phone-fill">&nbsp;&nbsp;&nbsp;+91 98346 74646</span><br><br>
+                    <span class="bi bi-facebook" style="color: blue;"></span>
+                    <span class="bi bi-linkedin" style="color: blue;"></span>
+                    <span class="bi bi-instagram" style="color: rgb(255, 0, 170);"></span><br><br><br>
+                    <a href="./public/docs/Sudarshan_Somvanshi.pdf" target="_blank"><button>Download CV</button></a>
+                </div>
+                
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name"><br><br>
+                    <input type="email" placeholder="Your Email"><br><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </section>
+    <footer>
+
+    </footer>    
+</body>
+</html>

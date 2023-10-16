@@ -1,0 +1,417 @@
+@media screen and (orientation:landscape) {
+    body
+    {
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: black;*/
+        color: red; 
+        overflow-x: hidden;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header
+    {
+        display: flex;
+        position: sticky;
+        top:5px;
+        justify-content: space-around;
+        background-color:rgb(38, 36, 36);
+        /* color: white; */
+        padding: 5px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin: 2px 0px 2px 0px;
+        transition: 800ms;
+        align-items: center;
+        height: 35px;
+        /* width:80%; */
+    }
+    .logo
+    {
+        font-weight: bold;
+        font-size: 25px;
+        text-shadow: 4px 4px 2px black;
+    }
+    nav a
+    {
+        text-decoration: none;
+        color:white;
+        /* text-shadow: 2px 2px 2px black; */
+    }
+    .nav-items
+    {
+        border: 1px solid red;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-radius: 10px;
+        border-width: 0;
+        padding: 8px 12px 9px 12px;
+        margin-left: 15px;
+        margin-right: 5px;
+        transition: .5;        
+    }
+    .nav-items:hover
+    {
+        /* transition: 1s; */
+        /* border-width:1px; */
+        background-color: white; 
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        transition: .5s;
+    }
+    .home
+    {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin-bottom: -100px;
+
+    }
+    .home-img img
+    {
+        margin-top: 30px;
+        /* margin-left: 105px; */
+        border-top-right-radius: 160px;
+        border-bottom-left-radius: 160px;
+        box-shadow: 24px 24px 20px gray;
+        transition: .5s;
+    }
+    .home-img img:hover
+    {
+        height: 605px;
+        width: 455px;
+        transition: .5s;
+    }
+    .main-text
+    {
+        margin-top: 200px;
+        width: 600px;
+        text-shadow: 4px 4px 5px grey;
+    }
+    .first-line
+    {
+        font-size: 28px;
+        margin-bottom: -12px;
+    }
+    .second-line
+    {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: -12px;
+
+    }
+    .typing
+    {
+        display:inline-block;
+        padding-right: 3px;
+        font-size: 35px;
+        border-right: 3px solid black;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 6s steps(23) infinite;
+        
+    }
+    @keyframes typing {
+        0%
+        {
+           width: 0;
+        }
+        50%
+        {
+            width: 70%;
+        }
+        
+    }
+    .btn-hire
+    {
+        margin-top: 70px;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 140px;
+        margin-right: 10px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: inset 0 0 0 50px black;
+        font-size: 20px;
+        transition: ease-out 1s;
+    }
+    .btn-cv
+    {
+        margin-top: 70px;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 150px;
+        margin-right: 10px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: inset 0 0 0 50px black;
+        font-size: 20px;
+        transition: ease-out 1s;
+    }
+    .btn-cv:hover
+    {
+        color: black;
+        background-color: white;
+        height: 50px;
+        width: 150px; 
+        box-shadow: inset 0 0 0 0 black;
+        transition: .7s;    
+    }
+    .btn-hire:hover
+    {
+        color: black;
+        background-color: white;
+        height: 50px;
+        width: 150px; 
+        box-shadow: inset 0 0 0 0 black;
+        transition: .7s;    
+        
+    }
+    .skills
+    {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin-top:30px;
+        margin-left: -10px;
+        padding-left: 110px;                                  
+        /* background-color: white;*/
+        color: black; 
+        width: 100%;
+    }
+    .heading
+    {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        text-shadow: 5px 2px 5px grey;
+        padding-top: 50px;
+       
+    }
+    .skillimg
+    {
+        height: 350px;
+        width: 450px;
+        margin-right: 180px;
+        border-top-right-radius: 180px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 20px 20px 15px gray;
+        transition: 1s;
+        
+    }
+    .skillimg:hover
+    {
+        transition: 1s;
+        height: 360px;
+        width:460px
+        
+    }
+    table
+    {
+        margin-top: 150px;
+    }
+    td
+    {
+        justify-content: space-between;
+        width: 400px;
+        font-weight: bold;
+    }
+    .skbar
+    {
+        width: 400px;
+        height: 25px;
+        transition: .5s;
+    }
+    .skbar:hover
+    {
+        width: 405px;
+        height: 30px;
+        transition: .2s;
+    }
+    #Projects
+    {
+        margin-top: 12%;
+        color: black;
+    }
+    .Projects
+    {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        background-color: black;
+        color: aliceblue;
+        padding: 18px;
+        border-radius: 10px;
+    }
+    .Projects a
+    {
+        display: flex;
+        text-decoration: none;
+        width: 125px;
+        color: black;
+        background-color: white;
+        padding: 3px 0px 3px 20px ;
+        border-radius: 7px;
+        font-weight: bold;
+        border: 1px solid red;
+        transition: .3s;
+    }
+    .Projects a:hover
+    {
+        font-size: 15px;
+        transition: .5s;
+        background-color: lightblue;
+    }
+    .p-heading
+    {
+        font-weight: bold;
+        margin-bottom: -9%;
+        font-size: 18px;
+
+    }
+    #Projects img
+    {
+        margin-top: 5%;
+        margin-bottom: 3%;
+        height: 100px;
+        width: 140px;
+        border-radius: 10px;
+        border: 5px solid lightblue;
+        transition:ease-out .5s;
+    }
+    #Projects img:hover
+    {
+        height: 105px;
+        width: 145px;
+        transition:ease-out .5s;
+    }
+    .service
+    {
+        display: flex;
+        justify-content:space-between;
+        /* margin-right: 105px; */
+        height: 500px;
+        padding-top:80px;
+        
+    }
+    .service img
+    {
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top: 10px double black;
+        border-bottom: 10px double black;
+        width: 380px;
+        height: 250px;
+        transition: .3s;
+    }
+    .service img:hover
+    {
+        width: 385px;
+        height: 252px;
+        transition: .3s;
+    }
+    .services-list
+    {
+        list-style: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 150px;
+        margin-top: 30px;
+    }
+    .service p 
+    {
+        color: black;
+    }
+    #contact
+    {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        border-radius: 30px;
+        padding: 5%;
+    }
+    .contact-left
+    {
+        color: white;
+    }
+    .contact-left h1
+    {
+        font-size: 35px;
+
+    }
+    .contact-left div
+    {
+        margin-bottom:15px ;
+    }
+    .contact-left span
+    {
+        margin-right: 15px;
+    }
+    .contact-left button
+    {
+        padding: 15px 40px 15px 40px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        box-shadow: inset 0 0 0 50px rgb(255, 0, 0);
+        transition: ease-out .5s;
+    }
+    .contact-left button:hover
+    {
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 15px 40px 15px 40px;
+        box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
+        transition: .5s;  
+    }
+    .contact-form input
+    {
+        width: 400px;
+        height: 40px;
+        background-color: rgb(68, 67, 67);
+        border: 1px solid black;
+        border-radius: 5px;
+        color: aliceblue;
+    }
+    .contact-form textarea
+    {
+        max-width: 400px;
+        max-height: 100px;
+        min-width: 400px;
+        min-height: 100px;
+        background-color: rgb(68, 67, 67);
+        border-radius: 5px;
+        border: 1px solid black;
+        color: aliceblue;
+    }
+    .contact-form button
+    {
+        padding: 15px 40px 15px 40px;
+        border-radius: 10px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        box-shadow: inset 0 0 0 50px rgb(255, 0, 0);
+        transition: ease-out .5s;
+    }
+    .contact-form button:hover
+    {
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        padding: 15px 40px 15px 40px;
+        box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
+        transition: .5s;   
+    }
+    ::placeholder
+    {
+        color: white;
+        font-size: 15px;
+    }
+}
+@media screen and (orientation:portrait) {
+        
+}
