@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Sudarshan-RS/my-portfolio/issues"
   },
-  "homepage": "https://github.com/Sudarshan-RS/my-portfolio#readme"
+  "homepage": "https://github.com/Sudarshan-RS/my-portfolio#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }

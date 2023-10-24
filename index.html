@@ -31,77 +31,82 @@
     </header>
     <main>
         <section>
-            <div class="home"  id="home">
-                <div class="home-img">
-                    <img src="./public/images/my1.jpeg" alt="My ortrait" height="600px" width="450px" id="main-img" target>
-                </div>
-                <div>
-                    <div class="main-text">
-                        <p class="first-line">I'm</p>
-                        <p class="second-line">Sudarshan Somvanshi</p>
-                        <p class="typing">MERN Stack Developer... </p>
+            <div class="home" id="home">
+                <div class="effect">
+                    <div class="home-img" data-aos="fade-up">
+                        <img src="./public/images/my1.jpeg" alt="My ortrait" height="600px" width="450px" id="main-img" target>
                     </div>
-                    <div class="main-btn">
-                        <a href="./public/docs/Sudarshan_Somvanshi.pdf" target="_blank"><button class="btn-cv">Download CV</button></a>
-                        <a href="#contact"><button class="btn-hire">Hire Me</button></a>
+                    <div class="right-side">
+                        <div class="main-text">
+                            <p class="first-line">I'm</p>
+                            <p class="second-line">Sudarshan Somvanshi</p>
+                            <p class="typing">MERN Stack Developer... </p>
+                        </div>
+                        <div class="main-btn">
+                            <a href="./public/docs/Sudarshan_Somvanshi.pdf" target="_blank"><button class="btn-cv">Download CV</button></a>
+                            <a href="#contact"><button class="btn-hire">Hire Me</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr style="color: grey; margin-top: 220px; margin-right: 105px;">
+            <hr>
             <div class="skills" id="skills">
                 <p class="heading-mobile">Skills</p>
-                <table>
-                    <tr>
-                        <td>HTML / CSS</td>
-                        <td>90%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="90" min="1" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td>Bootstrap</td>
-                        <td>90%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="90" min="1" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript / jQuery</td>
-                        <td>75%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="75" min="1" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td>ReactJS</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="85" min="1" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td>NodeJS / ExpressJS</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="85" min="1" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td>70%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="70" min="1" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td>SQL/MongoDB</td>
-                        <td>80%</td>
-                    </tr>
-                    <tr>
-                        <td><progress class="skbar" value="80" min="1" max="100"></td>
-                    </tr>
-
-                </table>
+                <!-- <p  class="heading-pc">Skills</p> -->
+                <div class="sub-skills">
+                    <table class="shade">
+                        <tr>
+                            <td>HTML / CSS</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="90" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="90" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript / jQuery</td>
+                            <td>75%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="75" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>ReactJS</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="85" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>NodeJS / ExpressJS</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="85" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="70" min="1" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>SQL/MongoDB</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td><progress class="skbar" value="80" min="1" max="100"></td>
+                        </tr>
+    
+                    </table>
+                </div>
                 <div>
                     <p  class="heading-pc">Skills</p>
                     <!-- <img src="./public/images/mern.jpg" alt="MERN"> -->
@@ -115,22 +120,22 @@
                     <span>
                         <p class="p-heading">Shoper template</p> <br>
                         <img src="./public/images/Shoper_thumbnail.png" alt="shoper-templet"><br>
-                        <a href="./public/shoper-templet.html" target="_blank">Live Preview</a>
+                        <button><a href="./public/shoper-templet.html" target="_blank">Live Preview</a></button>
                     </span>
                     <span>
                         <p class="p-heading">Landkit Landing page</p> <br>
                         <img src="./public/images/Landkit_thumbnail.png" alt="Landkit_thumbnail"><br>
-                        <a href="./public/Landkit.html" target="_blank">Live Preview</a>
+                        <button><a href="./public/Landkit.html" target="_blank">Live Preview</a></button>
                     </span>
                     <span>
                         <p class="p-heading">NareshIT_YTchannel</p> <br>
                         <img src="./public/images/NareshIT_thimbnail.png" alt="NareshIT_thimbnail"><br>
-                        <a href="./public/nareshit.html" target="_blank">Live Preview</a>
+                        <button><a href="./public/nareshit.html" target="_blank">Live Preview</a></button>
                     </span>
                     <span>
                         <p class="p-heading">Weather</p> <br>
                         <img src="./public/images/Weather_thumbnail.png" alt="Weather_thumbnail"><br>
-                        <a href="./public/ClassroomWeatherTable.html" target="_blank">Live Preview</a>
+                        <button><a href="./public/ClassroomWeatherTable.html" target="_blank">Live Preview</a></button>
                     </span>
                 </div>
 
@@ -160,15 +165,15 @@
                     <span class="bi bi-telegram" style="color: rgb(0, 136, 255);"></span><span>sudarshansomvanshi18@gmail.com</span><br><br>
                     <span class="bi bi-phone-fill">&nbsp;&nbsp;&nbsp;+91 98346 74646</span><br><br>
                     <span class="bi bi-facebook" style="color: blue;"></span>
-                    <span class="bi bi-linkedin" style="color: blue;"></span>
-                    <span class="bi bi-instagram" style="color: rgb(255, 0, 170);"></span><br><br><br>
+                    <span class="bi bi-linkedin" style="color: rgb(0, 136, 255);"></span>
+                    <span class="bi bi-instagram" style="color: rgb(255, 0, 136);"></span><br><br><br>
                     <a href="./public/docs/Sudarshan_Somvanshi.pdf" target="_blank"><button>Download CV</button></a>
                 </div>
                 
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name"><br><br>
-                    <input type="email" placeholder="Your Email"><br><br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br><br>
+                <form class="contact-form" action="https://formspree.io/f/mgejdzad" method="POST">
+                    <input type="text" placeholder="Your Name" name="User-Name"><br><br>
+                    <input type="email" placeholder="Your Email" name="Email"><br><br>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br><br>
                     <button type="submit">Submit</button>
                 </form>
             </div>

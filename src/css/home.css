@@ -2,7 +2,6 @@
     body
     {
         font-family: 'Montserrat', sans-serif;
-        /* background-color: black;*/
         color: red; 
         overflow-x: hidden;
         margin-left: 10%;
@@ -11,19 +10,15 @@
     header
     {
         display: flex;
-        position: sticky;
-        top:5px;
         justify-content: space-around;
-        background-color:rgb(38, 36, 36);
-        /* color: white; */
-        padding: 5px;
+        position: sticky;
+        flex-wrap: wrap;
+        top:5px;
+        background-color:black;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
-        margin: 2px 0px 2px 0px;
-        transition: 800ms;
+        transition: .8s;
         align-items: center;
-        height: 35px;
-        /* width:80%; */
     }
     .logo
     {
@@ -41,44 +36,41 @@
     }
     ul a
     {
-        text-decoration: none;
-        
+        text-decoration: none;        
         color:white;
-        /* text-shadow: 2px 2px 2px black; */
     }
     .nav-items
     {
-        border: 1px solid red;
-        border-top-right-radius: 40px;
-        border-bottom-left-radius: 40px;
         border-radius: 10px;
         border-width: 0;
-        padding: 8px 12px 9px 12px;
+        padding: 5px 10px 6px 10px;
         margin-left: 15px;
         margin-right: 5px;
-        transition: .5;        
+        transition:ease-out .4;       
+        color: white; 
     }
     .nav-items:hover
     {
-        /* transition: 1s; */
-        /* border-width:1px; */
         background-color: white; 
-        color: black;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
-        transition: .5s;
+        color: black;
+        transition:ease-out .4s;
     }
     .home
     {
         display: grid;
         grid-template-columns: 6fr 6fr;
-        margin-bottom: -100px;
-
+        /* margin-bottom: -100px; */
+    }
+    .effect 
+    {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
     }
     .home-img img
     {
         margin-top: 30px;
-        /* margin-left: 105px; */
         border-top-right-radius: 160px;
         border-bottom-left-radius: 160px;
         box-shadow: 24px 24px 20px gray;
@@ -89,6 +81,10 @@
         height: 605px;
         width: 455px;
         transition: .5s;
+    }
+    .right-side
+    {
+        margin-left: 10%;
     }
     .main-text
     {
@@ -106,7 +102,6 @@
         font-size: 50px;
         font-weight: bold;
         margin-bottom: -12px;
-
     }
     .typing
     {
@@ -123,7 +118,7 @@
     @keyframes typing {
         0%
         {
-           width: 0;
+        width: 0;
         }
         50%
         {
@@ -131,23 +126,12 @@
         }
         
     }
-    .btn-hire
+    .main-btn
     {
         margin-top: 70px;
-        color: white;
-        background-color: black;
-        padding: 10px;
-        width: 140px;
-        margin-right: 10px;
-        border-top-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        box-shadow: inset 0 0 0 50px black;
-        font-size: 20px;
-        transition: ease-out 1s;
     }
-    .btn-cv
+    .btn-cv, .btn-hire
     {
-        margin-top: 70px;
         color: white;
         background-color: black;
         padding: 10px;
@@ -157,26 +141,31 @@
         border-bottom-right-radius: 30px;
         box-shadow: inset 0 0 0 50px black;
         font-size: 20px;
-        transition: ease-out 1s;
+        transition: ease-out .5s;
+
     }
-    .btn-cv:hover
+    .btn-hire
+    {
+        width: 120px;
+    }
+    .btn-cv:hover, .btn-hire:hover
     {
         color: black;
         background-color: white;
         height: 50px;
-        width: 150px; 
+        width: 160px; 
         box-shadow: inset 0 0 0 0 black;
         transition: .7s;    
     }
     .btn-hire:hover
     {
-        color: black;
-        background-color: white;
-        height: 50px;
-        width: 150px; 
-        box-shadow: inset 0 0 0 0 black;
-        transition: .7s;    
-        
+        width: 130px;   
+    }
+    hr
+    {
+        color: grey;
+        margin-top: 60px; 
+        margin-right: 105px;
     }
     .skills
     {
@@ -185,7 +174,6 @@
         margin-top:30px;
         margin-left: -10px;
         padding-left: 110px;                                  
-        /* background-color: white;*/
         color: black; 
         width: 100%;
     }
@@ -196,7 +184,7 @@
         font-weight: bold;
         text-shadow: 5px 2px 5px grey;
         padding-top: 50px;
-       
+    
     }
     .heading-mobile
     {
@@ -212,8 +200,7 @@
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
         box-shadow: 20px 20px 15px gray;
-        transition: 1s;
-        
+        transition: 1s;        
     }
     .skillimg:hover
     {
@@ -253,29 +240,53 @@
     {
         display: grid;
         grid-template-columns: 3fr 3fr 3fr 3fr;
-        background-color: black;
+        /* background-color: black; */
         color: aliceblue;
-        padding: 18px;
+        padding-bottom: 18px;
         border-radius: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .Projects span
+    {
+        background-color: aliceblue;
+        color: black;
+        margin: 5px ;
+        align-items: center;
+        border-radius: 3%;
+        padding-bottom: 5%;
+        box-shadow: 2px 2px 2px gray;
+
+    }
+    .Projects span:hover
+    {
+        box-shadow: 4px 4px 4px gray;
     }
     .Projects a
     {
-        display: flex;
         text-decoration: none;
-        width: 125px;
-        color: black;
-        background-color: white;
-        padding: 3px 0px 3px 20px ;
-        border-radius: 7px;
+        color: white;
         font-weight: bold;
-        border: 1px solid red;
         transition: .3s;
     }
     .Projects a:hover
     {
-        font-size: 15px;
-        transition: .5s;
-        background-color: lightblue;
+        color: black;
+    }
+    .Projects button
+    {
+        border-radius: 5px;
+        width: 120px;
+        background-color: black;
+        padding: 5px;
+        box-shadow: inset 0 0 0 50px black;
+        transition:ease-in .3s;
+    }
+    .Projects button:hover
+    {
+        transition:ease-in .3s;
+        background-color: whitesmoke;
+        box-shadow: inset 0 0 0 0 black;
     }
     .p-heading
     {
@@ -288,26 +299,18 @@
     {
         margin-top: 5%;
         margin-bottom: 3%;
-        height: 100px;
-        width: 140px;
+        height: 120px;
+        width: 240px;
         border-radius: 10px;
-        border: 5px solid lightblue;
-        transition:ease-out .5s;
-    }
-    #Projects img:hover
-    {
-        height: 105px;
-        width: 145px;
+        border: 4px solid black;
         transition:ease-out .5s;
     }
     .service
     {
         display: flex;
         justify-content:space-between;
-        /* margin-right: 105px; */
         height: 500px;
         padding-top:80px;
-        
     }
     .service-h3
     {
@@ -355,6 +358,7 @@
         background-color: black;
         border-radius: 30px;
         padding: 5%;
+        margin-bottom: 5%;
     }
     .contact-left
     {
@@ -433,13 +437,12 @@
     {
         color: white;
         font-size: 15px;
-    }
+    }    
 }
 @media screen and (orientation:portrait) {
     body
     {
         font-family: 'Montserrat', sans-serif;
-        /* background-color: black;*/
         color: red; 
         overflow-x: hidden;
         margin-left: 10%;
@@ -451,8 +454,7 @@
         position: sticky;
         top:5px;
         justify-content: space-around;
-        background-color:rgb(38, 36, 36);
-        /* color: white; */
+        background-color:black;
         padding: 5px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
@@ -460,7 +462,6 @@
         transition: 800ms;
         align-items: center;
         height: 20px;
-        /* width:80%; */
     }
     .logo
     {
@@ -474,13 +475,14 @@
     }
     .bi-justify
     {
-        background-color: rgb(38, 36, 36);
-        color: aliceblue;
+        background-color: black;
+        color: lightgray;
         border: none;
         position: relative;
         top: -8px;
-        right: -25px;
+        right: -45px;
     }
+
     .nav-items
     {
         display: none;       
@@ -488,8 +490,19 @@
     .home
     {
         display: grid;
-        margin-bottom: -100px;
-
+        background-image: url(/public/images/my1.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        width: 80vw;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .effect
+    {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
     }
     .home-img img
     {
@@ -497,9 +510,12 @@
     }
     .main-text
     {
-        margin-top: 50px;
+        color: aliceblue;
+        padding-top: 250px;
+        padding-left: 20px;
+        margin-bottom: 0px;
         width: 100%;
-        text-shadow: 4px 4px 5px grey;
+        text-shadow: 4px 4px 5px black;
     }
     .first-line
     {
@@ -518,7 +534,7 @@
         display:inline-block;
         padding-right: 3px;
         font-size: 18px;
-        border-right: 3px solid black;
+        border-right: 3px solid aliceblue;
         overflow: hidden;
         white-space: nowrap;
         width: 0;
@@ -538,44 +554,54 @@
     }
     .btn-hire
     {
-        color: white;
-        background-color: black;
+        color: aliceblue;
+        background-color: rgb(255, 0, 0);
         width: 80px;
         height: 30px;
+        margin-top: 3%;
         margin-right: 10px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        box-shadow: inset 0 0 0 50px black;
+        box-shadow: inset 0 0 0 50px rgb(255, 0, 0);
         font-size: 15px;
         transition: ease-out 1s;
     }
     .btn-cv
     {
-        color: white;
-        background-color: black;
+        color: aliceblue;
+        background-color: rgb(255, 0, 0);
         width: 115px;
         height: 30px;
+        margin-top: 3%;
         margin-right: 10px;
+        margin-left: 20px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        box-shadow: inset 0 0 0 50px black;
+        box-shadow: inset 0 0 0 50px rgb(255, 0, 0);
         font-size: 15px;
         transition: ease-out 1s;
     }
     .btn-cv:hover
     {
-        color: black;
-        background-color: white;
-        box-shadow: inset 0 0 0 0 black;
+        color: aliceblue;
+        background-color: black;
+        border: 1px solid aliceblue;
+        box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
         transition: .7s;    
     }
     .btn-hire:hover
     {
-        color: black;
-        background-color: white;
-        box-shadow: inset 0 0 0 0 black;
+        color: aliceblue;
+        background-color: black;
+        border: 1px solid aliceblue;
+        box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
         transition: .7s;    
         
+    }
+    hr
+    {
+        color: grey;
+        margin-top: 30px; 
     }
     .skills
     {
@@ -601,6 +627,21 @@
     {
         display: none;
     }
+    .sub-skills
+    {
+        background-image: url(/public/images/programming.png);
+        background-size: cover;
+        background-position: left;
+        border-radius: 10%;
+    }
+    .shade
+    {
+        background-color:rgba(0, 0, 0, 0.7);        
+        color: aliceblue;
+        border-radius: 10%;
+        padding: 10px;
+
+    }
     .skillimg
     {
        display: none;
@@ -621,6 +662,7 @@
         width: 100%;
         height: 25px;
         transition: .5s;
+        font-weight: bold;
     }
     .skbar:hover
     {
@@ -635,30 +677,53 @@
     }
     .Projects
     {
-        background-color: black;
+        display: grid;
         color: aliceblue;
-        padding: 18px;
+        padding-bottom: 18px;
         border-radius: 10px;
-        padding-left: 20%;
+        text-align: center;
+        align-items: center;
+    }
+    .Projects span
+    {
+        background-color: aliceblue;
+        color: black;
+        margin: 5px ;
+        align-items: center;
+        border-radius: 3%;
+        padding-bottom: 5%;
+        box-shadow: 2px 2px 2px gray;
+
+    }
+    .Projects span:hover
+    {
+        box-shadow: 4px 4px 4px gray;
     }
     .Projects a
     {
-        display: flex;
         text-decoration: none;
-        width: 125px;
-        color: black;
-        background-color: white;
-        padding: 3px 0px 3px 20px ;
-        border-radius: 7px;
+        color: white;
         font-weight: bold;
-        border: 1px solid red;
         transition: .3s;
     }
     .Projects a:hover
     {
-        font-size: 15px;
-        transition: .5s;
-        background-color: lightblue;
+        color: black;
+    }
+    .Projects button
+    {
+        border-radius: 5px;
+        width: 120px;
+        background-color: black;
+        padding: 5px;
+        box-shadow: inset 0 0 0 50px black;
+        transition:ease-in .3s;
+    }
+    .Projects button:hover
+    {
+        transition:ease-in .3s;
+        background-color: whitesmoke;
+        box-shadow: inset 0 0 0 0 black;
     }
     .p-heading
     {
@@ -671,17 +736,15 @@
     {
         margin-top: 5%;
         margin-bottom: 3%;
-        height: 100px;
-        width: 140px;
+        height: 120px;
+        width: 240px;
         border-radius: 10px;
         border: 5px solid lightblue;
         transition:ease-out .5s;
     }
-    #Projects img:hover
+    #service
     {
-        height: 105px;
-        width: 145px;
-        transition:ease-out .5s;
+        margin-top: 35%;
     }
     .service
     {
@@ -724,6 +787,7 @@
         background-color: black;
         border-radius: 20px;
         padding: 5%;
+        margin-top: 40%;
     }
     .contact-left
     {
@@ -745,6 +809,7 @@
     .contact-left button
     {
         padding: 15px 40px 15px 40px;
+        /* margin-left: 20%; */
         margin-bottom: 15%;
         border-radius: 10px;
         background-color: red;
@@ -784,6 +849,8 @@
     .contact-form button
     {
         padding: 15px 40px 15px 40px;
+        /* margin-left: 28%;
+         */
         border-radius: 10px;
         background-color: rgb(255, 0, 0);
         color: white;
