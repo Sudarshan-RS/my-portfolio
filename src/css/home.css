@@ -490,7 +490,7 @@
     .home
     {
         display: grid;
-        background-image: url(./public/images/my1.jpeg);
+        background-image: url(/public/images/my1.jpeg);
         background-position: center;
         background-size: cover;
         height: 70vh;
@@ -629,7 +629,7 @@
     }
     .sub-skills
     {
-        background-image: url(./public/images/programming.png);
+        background-image: url(/public/images/programming.png);
         background-size: cover;
         background-position: left;
         border-radius: 1%;
