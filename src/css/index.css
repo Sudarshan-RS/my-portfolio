@@ -464,6 +464,13 @@ td
         border-top-right-radius: 100px;
         border-bottom-left-radius: 100px;
     }
+    .right-side
+    {
+        overflow: hidden;
+        padding-left: 19px;
+        margin-left: -135px;
+        margin-top: 114px;
+    }
     .home-img img
     {
         display: none;
@@ -662,5 +669,5 @@ td
         max-height: 50%;
         min-width: 100%;
         min-height: 50%;
-    }   
+    }  
 }
