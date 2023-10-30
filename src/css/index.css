@@ -429,21 +429,53 @@ td
     {
         font-size: 15px;
     }
+    .nav-items
+    {
+        display: none;       
+    }
     .bi-justify
     {
         display: inline;
         background-color: black;
-        font-size: 15px;
-        color: white;
+        color: lightgray;
         border: none;
-        position: absolute;
-        top: 7px;
-        right: 45px;
     }
-
-    .nav-items
+    .dropdown
     {
-        display: none;       
+        display: inline-block;
+        position: relative;
+    }
+    .dropdown-content
+    {
+        display: none;
+        position: absolute;
+        background:rgba(0, 0, 0, 0.7);
+        border-radius: 4px;
+        z-index: 1;
+
+    }
+    .dropdown-content a
+    {
+        text-decoration: none;
+        font-size: small;
+        color: white;
+        display: block;
+        padding: 2px 1px;
+    }
+    .dropdown-content a:hover
+    {
+        background-color:#ddd;
+        color: black;
+    }
+    .dropdown:hover .dropdown-content
+    {
+        display: block;
+    }
+    .dropdown:hover .bi-justify:hover
+    {
+        background-color: #ddd;
+        color: black;
+        border-radius: 5px;
     }
     .home
     {
