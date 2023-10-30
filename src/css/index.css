@@ -485,7 +485,8 @@ td
     .home
     {
         display: grid;
-        background-image: url(../../public/images/my1.jpeg);
+        background-image: url(../../public/images/my1.png);
+        background-color: black;
         background-position: center;
         background-size: cover;
         height: 70vh;
