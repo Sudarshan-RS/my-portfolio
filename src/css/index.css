@@ -56,6 +56,10 @@ ul a
     color: black;
     transition:ease-out .4s;
 }
+.dropdown
+{
+    display: none;
+}
 .home
 {
     display: grid;
