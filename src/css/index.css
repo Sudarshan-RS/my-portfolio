@@ -452,10 +452,11 @@ td
     }
     .dropdown-content
     {
-        display: none;
+        /* display: none; */
         position: absolute;
         background:rgba(0, 0, 0, 0.7);
         border-radius: 4px;
+        padding-top: 15%;
         z-index: 1;
 
     }
