@@ -452,7 +452,7 @@ td
     }
     .dropdown-content
     {
-        /* display: none; */
+        display: none;
         position: absolute;
         background:rgba(0, 0, 0, 0.7);
         border-radius: 4px;
