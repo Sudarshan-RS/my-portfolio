@@ -50,8 +50,15 @@
         }
        
     </style>
+    <script type="text/javascript">
+        function bodyload()
+        {   
+            fetch("http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=d5aff9d79eab3827cb4cf72d48f5be43")
+            fetch("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid = d5aff9d79eab3827cb4cf72d48f5be43")
+        }
+    </script>
 </head>
-<body>
+<body onload="bodyload()">
     <table class="parent-table" width="50%" height="400" cellpadding="20" bgcolor="skyblue">
       <tr>
         <td class="loc-title" colspan="3" valign="top">
@@ -121,43 +128,43 @@
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
                         23&deg;
                     </td>
-                    <td>
+                    <td class="details" align="center">
                         Tue 8 <br>
                         <span class="bi bi-water"></span> <br>
                         30&deg;<br>
