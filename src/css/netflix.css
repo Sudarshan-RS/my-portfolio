@@ -215,7 +215,8 @@ footer :nth-child(1) {
 .footer ul li {
   padding: 6px;
 }
-@media only screen and (max-width: 425px) {
+/* @media only screen and (max-width: 425px) */
+@media screen and (orientation:portrait) {
   .btn {
     min-width: 10px;
     min-height: 35px;
