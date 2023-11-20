@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 section {
-  background-image: url(/public/images/1.jpg);
+  background-image: url(../../public/images/1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   height: 96vh;
