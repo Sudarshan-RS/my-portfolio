@@ -79,7 +79,7 @@ form h2 {
 footer {
   color: rgb(183, 183, 183);
   width: 100%;
-  padding: 3% 10%;
+  padding: 2% 10%;
   position: relative;
   margin-top: -35px;
 }
@@ -99,6 +99,7 @@ footer div {
 }
 .login-footer li {
   list-style: none;
+  padding: 7px;
 }
 @media screen and (orientation: portrait) {
   body {
